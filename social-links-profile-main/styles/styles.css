@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Inter Variable";
+  src: url("../assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+:root {
+  /* - White: 
+- Grey: 
+- Dark Grey: 
+- Off Black:  */
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark_grey: hsl(0, 0%, 12%);
+  --off_black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--off_black);
+  color: white;
+  font-family: "Inter Variable";
+}
+
+.links-card {
+  background-color: var(--dark_grey);
+  width: 25rem;
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  margin: 4rem auto 0;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 6rem;
+  margin-bottom: 1.25rem;
+}
+
+.user-full-name {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.user-location {
+  color: var(--green);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.user-bio {
+  margin-bottom: 1.25rem;
+}
+
+.user-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.user-links li {
+  background-color: var(--grey);
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.user-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+}
