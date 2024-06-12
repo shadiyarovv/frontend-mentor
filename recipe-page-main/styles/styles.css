@@ -10,6 +10,10 @@
   src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
 }
 
+html {
+  font-size: 20px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -143,13 +147,45 @@ p {
 
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1200px) {
   html {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   body p {
     line-height: 1.5;
+  }
+
+  .whole-wrapper {
+    width: 80%;
+    margin: 1.25rem auto;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .main-image {
+    border-radius: 0.75rem;
+  }
+
+  .mobile-wrapper {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 16px;
+  }
+
+  .whole-wrapper {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 12px;
   }
 
   .whole-wrapper {
@@ -162,9 +198,5 @@ p {
   .main-image {
     border-radius: 0;
   }
-
-  .mobile-wrapper {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
 }
+
